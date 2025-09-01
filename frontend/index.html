@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Информация о заказе</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            margin-top: 30px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #aaa;
+        }
+        th, td {
+            padding: 8px 12px;
+            text-align: left;
+        }
+        .items-table td, .items-table th {
+            text-align: center;
+        }
+        .search-box {
+            margin-bottom: 20px;
+        }
+        input {
+            padding: 6px;
+            font-size: 14px;
+        }
+        button {
+            padding: 6px 12px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<h1>Поиск заказа</h1>
+
+<div class="search-box">
+    <input type="text" id="orderId" placeholder="Введите order_uid" size="40">
+    <button onclick="loadOrder()">Загрузить</button>
+</div>
+
+<div id="order"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
